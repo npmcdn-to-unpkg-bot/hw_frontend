@@ -4,28 +4,27 @@ body{
 	background-color:#EEEEEE;
 }
 
-h1{
-	text-align:center;
-	margin:0;
+p{
+	text-indent:20px;
+	text-align:justify;
 }
-.wrapper{
-	background-color:#EEEEEE;
-	margin: 0;
-}
+
+h1,
 .myphoto{
 	text-align:center;
-	
 }
-.content{
+
+
+.wrapper{
+	margin: 5px auto 15px auto;
+	padding:40px;
 	width:35%;
 	height:100%;
 	background-color:white;
-	margin: 5px auto 15px auto;
-	padding:40px;
 }
-p{
-	text-indent:20px;
-}
-.infa{
-	text-align:justify;
+
+.content, 
+.reasons,
+.contacts{
+	border-bottom: 2px solid black;
 }
