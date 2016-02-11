@@ -1,0 +1,31 @@
+body{
+	padding:0;
+	margin:0;
+	background-color:#EEEEEE;
+}
+
+h1{
+	text-align:center;
+	margin:0;
+}
+.wrapper{
+	background-color:#EEEEEE;
+	margin: 0;
+}
+.myphoto{
+	text-align:center;
+	
+}
+.content{
+	width:35%;
+	height:100%;
+	background-color:white;
+	margin: 5px auto 15px auto;
+	padding:40px;
+}
+p{
+	text-indent:20px;
+}
+.infa{
+	text-align:justify;
+}
