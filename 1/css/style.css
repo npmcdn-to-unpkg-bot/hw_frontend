@@ -1,0 +1,176 @@
+body {
+	height: 100%;
+	width:100%;
+}
+@media screen and (max-width:780px){
+	.wrapper {
+		max-width:780px;
+	}
+
+	.leftCol,
+	.rightCol{
+		float: none;
+		width: 100%;
+	}
+
+	.box{
+		width: 70%;
+		margin: 0 auto;
+	}
+
+}
+@media screen and (min-width:780px){
+	.wrapper {
+		max-width:960px;
+	}
+	.leftCol{
+		float: left;
+		width: 40%;
+	}
+	.rightCol{
+		float: left;
+		width: 60%;
+	}
+	.box{
+		width: 100%
+	}
+}
+
+.wrapper {
+
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 10px 10px 10px 10px;
+	-moz-box-shadow: 4px 11px 42px 0px rgba(20,120,0,1);
+	box-shadow: 4px 11px 42px 0px rgba(20,120,0,1);
+	background: rgba(241,255,199,1);
+	background: -moz-linear-gradient(top, rgba(241,255,199,1) 0%, rgba(97,220,72,0.62) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(241,255,199,1)), color-stop(100%, rgba(97,220,72,0.62)));
+	background: -webkit-linear-gradient(top, rgba(241,255,199,1) 0%, rgba(97,220,72,0.62) 100%);
+	background: -o-linear-gradient(top, rgba(241,255,199,1) 0%, rgba(97,220,72,0.62) 100%);
+	background: -ms-linear-gradient(top, rgba(241,255,199,1) 0%, rgba(97,220,72,0.62) 100%);
+	background: linear-gradient(to bottom, rgba(241,255,199,1) 0%, rgba(97,220,72,0.62) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1ffc7', endColorstr='#61dc48', GradientType=0 );
+}
+
+.clearfix:after {
+	content: ""; 
+	display: table;
+	clear: both;
+}
+/*---------------------------HEADER---------------------------------------*/
+header {
+	padding: 10px 10px 10px 10px;
+	
+}
+/*.authorization,
+.loginForm {
+	display: none;
+}*/
+.title {
+	float: left;
+	width: 10%;
+	height: 30px;
+	margin-right:3px; 
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid #42B22C;
+}
+li:hover:active {
+	-moz-box-shadow: inset 0px 0px 10px 0px rgba(20,120,0,1);
+	box-shadow: inset 0px 0px 10px 0px rgba(20,120,0,1);
+}
+/*---------------------------CONTAINER---------------------------------------*/
+.container{
+	box-sizing: border-box;
+	display: none;
+	padding: 15px 15px 15px 15px;
+}
+/*---------------------------LEFT COL---------------------------------------*/
+.leftCol{
+	box-sizing: border-box;
+	height: 100px;
+	padding: 10px 10px 10px 10px;
+}
+.h2 {
+	line-height: 40px;
+	font-size: 20px;
+	font-family:  monospace;
+	color:rgba(20,120,0,1);
+	text-shadow: 2px 2px 5px rgba(20,120,0,1);
+}
+/*---------------------------RIGHT COL---------------------------------------*/
+.rightCol{
+	box-sizing: border-box;
+	padding: 10px 10px 10px 10px;
+}
+
+.contFofStars {
+	position: relative;
+	padding: 15px 15px 15px 0px;
+}
+
+
+.stars{
+	float: left;
+	width: 16px;
+	height: 16px;
+	background:url(../img/star.png) 0 0 no-repeat;
+	background-position: 0px 0px;
+}
+
+.active{
+	background:url(../img/star.png) 0 0 no-repeat;
+	background-position: 0px -16px;
+}
+
+.starRate span{
+	display: none;
+	line-height: 20px;
+	font:15px monospace rgba(20,120,0,1);
+	text-shadow: 1px 1px 1px rgba(20,120,0,1);
+}
+.contFofStars span {
+	position: absolute;
+	left: 90px;
+}
+
+.SubmitRev textarea{
+	outline:none;
+	height: 50px;
+	width: 70%;
+	padding: 5px;
+	border-radius: 10px;
+	border-style: none;
+	background: rgba(232,255,184,1);
+	line-height: 20px;
+	text-shadow: 1px 1px 1px rgba(20,120,0,1);
+	display: block;
+}
+
+.SubmitRev textarea:active:hover{
+	border-style: none;
+	-moz-box-shadow: 4px 11px 42px 0px rgba(20,120,0,1);
+	box-shadow: 4px 11px 42px 0px rgba(20,120,0,1);
+}
+.SubmitRev button{
+	outline:none;
+	border-radius:10px;
+	border:none; 
+	margin-top:15px; 
+	line-height: 40px;
+	font-size: 20px;
+	text-shadow: 3px 1px 1px rgba(20,120,0,1);
+	background-color:rgba(20,120,0,1);
+	color: rgba(232,255,184,1);
+}
+.SubmitRev button:hover{
+	background-color:rgba(20,80,0,1);
+}
+
+
+
+
+
+
