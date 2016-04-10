@@ -3,7 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<title></title>
+	<script type="text/javascript" src='lib/jquery.js'></script>
+
 
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -17,42 +20,56 @@
 
 		<!-- ----------------------------------------------- -->
 		<header class="clearfix">
+
+			
+
+			<button class="mainRegistration button"  id="mainRegistration">Registration</button>
+			<button class="mainLogin button" id="mainLogin">Login</button>
+			<button class="button"  id="getProducts">Get a list of products</button>
+
+
+			<form class="authorization">
+				<div>User name</div>
+				<input type="text" id="username" required="required">
+				<div>Password</div>
+				<input type="password" id="password" required="required">
+				<div><button class="registration button" id="registration">Registration</button></div>
+			</form>
+
+			<form  class="loginForm">
+				<div>User name</div>
+				<input type="text" id="usernameLogin" required>
+				<div>Password</div>
+				<input type="password" id="passwordLogin" required>
+				<div>
+					<button class="login button" id="login">Login</button>
+				</div>
+			</form>
+
+			
+			<button class="button"  id="goOut">Go out</button>
 			<ul class="titleProduct">
 				<li class="title">1</li>
 				<li class="title">2</li>
 			</ul>
+			
 		</header>
 
 
-	<button class="mainRegistration" id="mainRegistration">Registration</button>
-	<button class="mainLogin" id="mainLogin">Login</button>
-
-		<div class="authorization">
-			<form >
-			<div>User name</div>
-				<input type="text" id="username">
-			<div>Password</div>
-				<input type="password" id="password">
-				<button class="registration" id="registration">Registration</button>
-			</form>
-
-
-			<div class="userInfo" style="display:none;">
-				<input type="button" value="Go out" id="GoOut" />
-				<input type="button" value="Get a list of products" id="getProducts" />
-				<div class="list of products">
-					<ul></ul>
-				</div>
-			</div>
+		
 
 
 
-			<form  class="loginForm">
-				<input type="text" id="usernameLogin">
-				<input type="password" id="passwordLogin">
-				<button class="login" id="login">Login</button>
-			</form>
-		</div>
+
+
+
+
+
+
+
+
+
+
 		<div class="container clearfix">
 			<div class="leftCol">
 				<div class="box">
@@ -74,10 +91,11 @@
 							<li><a href="#" class='stars noActive' value="5"><span>5 star</a></span></li>
 						</ul>
 					</div>
-					<form class="SubmitRev">
-						<textarea cols="30" rows="30" id="review"></textarea>
-						<button id="postReview">Submit Review</button>
+					<form class="SubmitRev" >
+						<textarea cols="30" rows="30" id="review" placeholder="comment" required></textarea>
+						<button id="postReview" class="button">Submit Review</button>
 					</form>
+					<div class="warningNotLog">You must log in first</div>
 					<div class="Reviews h2">Reviews</div>
 				</div>
 
@@ -86,9 +104,10 @@
 
 
 
-	</div>
-	<script src="js/showProducts.js"></script>
-	<script src="js/CreateView.js"></script>
-	<script src="js/app.js"></script>
+
+		<script src="js/showProducts.js"></script>
+		<script src="js/CreateView.js"></script>
+		<script src="js/app.js"></script>
+	</div>			
 </body>
 </html>

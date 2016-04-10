@@ -1,4 +1,6 @@
 
+
+
 (function($) {
 
 	registration:$(function(){
@@ -7,15 +9,53 @@
 			$(".mainRegistration").css("display","none");
 			$(".mainLogin").css("display","none");
 		})
-		var a = function(){
-			console.log(ddfvfb);
-			$(".authorization").css("display","none");
-			$(".loginForm").css("display","block");
+		$('#registration').click(function(){
+			if(($('#username').val()) && ($('#password').val())){
+				$(".authorization").css("display","none");
+				$(".loginForm").css("display","block");
+			}
 
-		};
-		$('#registration').click(a)
+		})
 
 	})
+
+
+	login:$(function(){
+		$('.mainLogin').click(function(){
+			$(".loginForm").css("display","block");	
+			$('.mainLogin').css('display', 'none');
+			$('.mainRegistration').css('display', 'none');
+		})
+		$('.login').click(function(){
+			if(($('#usernameLogin').val()) && ($('#passwordLogin').val())){
+				$('#goOut').css("display","inline-block");
+				$('.loginForm').css('display', 'none');	
+				$('.mainLogin').css('display', 'none');
+				$('.mainRegistration').css('display', 'none');
+			}
+		})
+	})
+
+	goOut:$(function(){
+		$('#goOut').click(function(){
+			$('.mainLogin').css('display', 'inline-block');
+			$('.mainRegistration').css('display', 'inline-block');
+			$('#goOut').css("display","none");
+			$('.loginForm').css('display', 'none');	
+
+		})
+		
+	})
+
+	getProducts:$(function(){
+		$('#getProducts').click(function(){
+			$("ul.titleProduct").css("display","block");	
+
+		})
+		
+	})
+
+
 
 
 	header:$(function(){

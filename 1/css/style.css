@@ -63,10 +63,16 @@ header {
 	padding: 10px 10px 10px 10px;
 	
 }
-/*.authorization,
-.loginForm {
+.titleProduct{
 	display: none;
-}*/
+	margin-top: 20px;
+}
+.warningNotLog,
+.authorization,
+.loginForm,
+#goOut {
+	display: none;
+}
 .title {
 	float: left;
 	width: 10%;
@@ -80,6 +86,36 @@ header {
 li:hover:active {
 	-moz-box-shadow: inset 0px 0px 10px 0px rgba(20,120,0,1);
 	box-shadow: inset 0px 0px 10px 0px rgba(20,120,0,1);
+}
+.authorization,
+.loginForm{
+	width: 200px;
+	margin: 0 auto;
+	padding: 30px 30px 30px 30px;
+	background: rgba(232,255,184,1);
+	border-radius: 20px;
+	
+}
+
+.authorization div,
+.loginForm div{
+	text-align: center;
+	margin-top:10px; 
+	
+}
+
+input{
+	width: 200px;
+	height: 20px;
+	border-radius: 6px;	
+	line-height: 20px;
+	text-shadow: 1px 1px 1px rgba(20,120,0,1);
+}
+input:active:hover, textarea:active:hover{
+	margin-bottom:4px; 
+	border-style: none;
+	-moz-box-shadow: 4px 11px 42px 0px rgba(20,120,0,1);
+	box-shadow: 4px 11px 42px 0px rgba(20,120,0,1);
 }
 /*---------------------------CONTAINER---------------------------------------*/
 .container{
@@ -149,12 +185,8 @@ li:hover:active {
 	display: block;
 }
 
-.SubmitRev textarea:active:hover{
-	border-style: none;
-	-moz-box-shadow: 4px 11px 42px 0px rgba(20,120,0,1);
-	box-shadow: 4px 11px 42px 0px rgba(20,120,0,1);
-}
-.SubmitRev button{
+
+.button{
 	outline:none;
 	border-radius:10px;
 	border:none; 
@@ -165,10 +197,13 @@ li:hover:active {
 	background-color:rgba(20,120,0,1);
 	color: rgba(232,255,184,1);
 }
-.SubmitRev button:hover{
+.button:hover{
 	background-color:rgba(20,80,0,1);
 }
-
+.warningNotLog{
+	color: red;
+	text-shadow: 1px 1px 1px rgba(20,120,0,1);
+}
 
 
 
