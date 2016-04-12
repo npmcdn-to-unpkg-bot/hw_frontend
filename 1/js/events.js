@@ -7,7 +7,10 @@
 		$('.mainLogin').click(mainLogClick);
 		$('.login').click(loginClick);
 		$('#goOut').click(goOut);
+
 		$('#getProducts').click(getProductsEvents);
+		$('#mainGetProducts').click(mainGetProductsEvents);
+
 		$('#postReview').click(sendPostReview);
 
 
@@ -33,6 +36,7 @@ function registrationClick(){
 	registApp();
 	$(".authorization").hide();
 	$(".loginForm").show();
+	$("#getProducts").show();
 	return false;
 };
 
@@ -58,12 +62,19 @@ function goOut(){
 	return false;
 };
 
-function getProductsEvents() {
-	$("ul.titleProduct").show();	
+function getProductsEvents() {	
 	$("#getProducts").hide();
 	$('.loginForm').hide();	
 	$(".authorization").hide();
-
+	$(".title").show();
+	return false;
+};
+function mainGetProductsEvents() {
+	$("ul.titleProduct").show();	
+	$("#mainGetProducts").hide();
+	$('.mainRegistration').show();;
+	$('.loginForm').hide();	
+	$('.mainLogin').show();
 	listProductsApp();
 	return false;
 };
