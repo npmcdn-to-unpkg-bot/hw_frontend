@@ -17,7 +17,7 @@ $(function () {
 (function($){
 $(function() {
 
-  $('span.jQtooltip').each(function() {
+  $('span.tooltip').each(function() {
     var el = $(this);
     var title = el.attr('title');
     if (title && title != '') {
@@ -44,4 +44,4 @@ $(function() {
   })
 
 })
-})(jQuery)
+})(jQuery);
