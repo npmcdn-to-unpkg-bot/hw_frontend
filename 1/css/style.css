@@ -64,7 +64,6 @@ header {
 	
 }
 .titleProduct{
-	display: none;
 	margin-top: 20px;
 }
 .warningNotLog,
@@ -83,10 +82,14 @@ header {
 	line-height: 30px;
 	border: 1px solid #42B22C;
 }
-li:hover:active {
+li:hover {
 	-moz-box-shadow: inset 0px 0px 10px 0px rgba(20,120,0,1);
 	box-shadow: inset 0px 0px 10px 0px rgba(20,120,0,1);
 }
+.liActive {
+	box-shadow: inset 0px 0px 10px 0px rgba(20,120,0,1);
+}
+
 .authorization,
 .loginForm{
 	width: 200px;
@@ -111,7 +114,7 @@ input{
 	line-height: 20px;
 	text-shadow: 1px 1px 1px rgba(20,120,0,1);
 }
-input:active:hover, textarea:active:hover{
+input:hover{
 	margin-bottom:4px; 
 	border-style: none;
 	-moz-box-shadow: 4px 11px 42px 0px rgba(20,120,0,1);
@@ -147,17 +150,15 @@ input:active:hover, textarea:active:hover{
 	padding: 15px 15px 15px 0px;
 }
 
-
 .stars{
 	float: left;
 	width: 16px;
 	height: 16px;
-	background:url(../img/star.png) 0 0 no-repeat;
+	background:url(http://smktesting.herokuapp.com/static/star.gif) 0 0 no-repeat;
 	background-position: 0px 0px;
 }
 
 .active{
-	background:url(../img/star.png) 0 0 no-repeat;
 	background-position: 0px -16px;
 }
 
@@ -167,16 +168,17 @@ input:active:hover, textarea:active:hover{
 	font:15px monospace rgba(20,120,0,1);
 	text-shadow: 1px 1px 1px rgba(20,120,0,1);
 }
+
 .contFofStars span {
 	position: absolute;
 	left: 90px;
 }
 
-.SubmitRev textarea{
+.styleRev{
 	outline:none;
-	height: 50px;
 	width: 70%;
 	padding: 5px;
+	margin-bottom:10px; 
 	border-radius: 10px;
 	border-style: none;
 	background: rgba(232,255,184,1);
@@ -185,6 +187,10 @@ input:active:hover, textarea:active:hover{
 	display: block;
 }
 
+textarea:focus{
+	border: 1px solid rgba(20,120,0,1);
+	margin-bottom:8px; 
+}
 
 .button{
 	outline:none;
@@ -197,9 +203,11 @@ input:active:hover, textarea:active:hover{
 	background-color:rgba(20,120,0,1);
 	color: rgba(232,255,184,1);
 }
+
 .button:hover{
 	background-color:rgba(20,80,0,1);
 }
+
 .warningNotLog{
 	color: red;
 	text-shadow: 1px 1px 1px rgba(20,120,0,1);
