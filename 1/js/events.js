@@ -1,4 +1,6 @@
 
+
+
 // ------------------------------------------EVENTS----------------------------------------
 (function($) {
 	$(function(){
@@ -79,7 +81,7 @@ function mainGetProductsEvents() {
 	return false;
 };
 
-function getProduct() {
+function showProduct() {
 	numProduct=+($(this).attr('value'));
 	$(".title").removeClass('liActive')
 	$(this).addClass('liActive');
@@ -99,6 +101,3 @@ function sendPostReview() {
 	else
 		$(".warningNotLog").css("display","block");	
 };
-
-
-

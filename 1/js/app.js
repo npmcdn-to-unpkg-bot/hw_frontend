@@ -46,10 +46,9 @@ function listProductsApp(){
 		url: 'http://smktesting.herokuapp.com/api/products/',
 	})
 	.success(function (data) { 
-		products=data; 
-		getReviewsApp();
-		createTitleProducts();
-		createAllProducts();
+		getReviewsApp(data);
+		createTitleProducts(data);
+		createAllProducts(data);
 	})
 	.fail(function (data) {
 		alert('ERROR')
@@ -81,18 +80,17 @@ function sendReviewApp (i){
 	});
 };
 
-function getReviewsApp() {
-for (var i = 1; i <= products.length; i++) {
-	$.ajax({
-		type: "GET",
-		url: 'http://smktesting.herokuapp.com/api/reviews/'+i,
-	})
-	.success(function (data) {
-		reviews=data;
-		createReviews();
-	})
-	.fail(function (data) {
-		alert('ERROR')
-	});
+function getReviewsApp(data) {
+	for (var i = 1; i <= data.length; i++) {
+		$.ajax({
+			type: "GET",
+			url: 'http://smktesting.herokuapp.com/api/reviews/'+i,
+		})
+		.success(function (data) {
+			createReviews(data);
+		})
+		.fail(function (data) {
+			alert('ERROR')
+		});
 	}
 }
