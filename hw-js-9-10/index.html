@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SAIHAK</title>
+	<link rel="stylesheet" type="text/css" href="css/easydropdown.flat.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" href="css/slimmenu.min.css" type="text/css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="js/jcarousellite.js"></script>
+	<script type="text/javascript" src="js/jquery.checkbox.js"></script>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery.easydropdown.js"></script>
+	<script src="js/jquery.slimmenu.min.js"></script>
+
+	
+</head>
+<body>
+	<nav>
+		<div class="wrapper">
+            <ul class="slimmenu" id="navigation">
+                <li>
+                    <a href="#">Меню 1</a>
+                    <ul>
+                        <li>
+                            <a href="#"> Подменю 1.1</a>
+                            <ul>
+                                <li><a href="#"> Подменю 1.1.1</a></li>
+                                <li>
+                                    <a href="#"> Подменю 1.1.2</a>
+                                    <ul>
+                                        <li><a href="#">Подменю 1.1.2.1</a></li>
+                                        <li><a href="#">Подменю 1.1.2.2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Подменю 1.2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Меню 2</a></li>
+                <li>
+                    <a href="#">Меню 3</a>
+                    <ul>
+                        <li>
+                            <a href="#">Подменю 3.1</a>
+                            <ul>
+                                <li><a href="#">Подменю 3.1.1</a></li>
+                                <li><a href="#">Подменю 3.1.2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Подменю 3.2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Меню 4</a></li>
+            </ul>
+        </div>
+  </nav>
+	
+	<div class="gallery">
+
+	    <ul>
+
+	        <li><img src="img/car5.jpg" height="410px" width="860px" alt=""/></li>
+	        <li><img src="img/car2.jpg" height="410px" width="860px" alt=""/></li>
+	        <li><img src="img/car3.jpg" height="410px" width="860px" alt=""/></li>
+	        <li><img src="img/car4.jpg" height="410px" width="860px" alt=""/></li>
+	        <li><img src="img/car1.jpg" height="410px" width="860px" alt=""/></li>
+	        <li><img src="img/car6.jpg" height="410px" width="860px" alt=""/></li>
+	       
+
+	    </ul>   
+
+	    <button class="prev"><</button>             
+		<button class="next">></button>   
+	</div>
+	
+<div class="selectDrop">
+	<select class="dropdown" data-settings='{"dropdownClass":"flat"}'>
+
+	    <option value="" class="label">Выбор Суперкара</option>
+	    <option value="1">Суперкар 1</option>
+	    <option value="2">Суперкар 2</option>
+	    <option value="3">Суперкар 3</option>
+	    <option value="4">Суперкар 4</option>
+	    <option value="5">Суперкар 5</option>
+
+	</select>
+
+</div>
+
+<div class="conteiner_checkbox">
+
+		<div id="show">
+		            <h1>Стилизация элементов checkbox и radio button на CSS3</h1>
+		            <input type="checkbox" id="c1" name="cc" />
+		            <label for="c1"><span></span>Check Box 1</label>
+		            <p>
+		            <input type="checkbox" id="c2" name="cc" />
+		            <label for="c2"><span></span>Check Box 2</label>
+		            <p><br/>
+		            <input type="radio" id="r1" name="rr" />
+		            <label for="r1"><span></span>Radio Button 1</label>
+		            <p>
+		            <input type="radio" id="r2" name="rr" />
+		            <label for="r2"><span></span>Radio Button 2</label>
+		        </div>
+
+		<div class="checkbox_JQ">
+			<div ><h1>Стилизация элементов checkbox с помощью JQuery</h1><label for="ch1">Check Box 1<input type="checkbox" class="niceCheck" id="ch1" tabindex="1" > </label></div>
+			<div ><label for="ch2">Check Box 2</label><input type="checkbox" class="niceCheck"  id="ch2" tabindex="2" value="" ></div>
+			<div ><label for="ch3">Check Box 3</label><input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" ></div>
+		</div>
+</div>
+
+	<script   src="js/script.js"></script>
+</body>
+</html>
