@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HW_JS 15-16</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="js/jquery.placeholder.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/tmpl.js"></script>
+</head>
+<body>
+ 
+<div class="google">
+<img src="img/googlelogo_color.png">
+</div>
+<div>
+<form action="" method="post" id="search-block-form">
+      <div class="form-item">
+        <input type="text" name="" value="" size="15" maxlength="128" placeholder="Найти...">
+      </div>
+      <div class="form-actions">
+        <input type="submit" id="edit-submit" name="op" value="Поиск" class="form-submit">
+
+      </div>
+</form>
+ </div>
+
+
+				<script type="text/html" class="showImg">
+					 <% for(i=0; i<5; i++) { %>
+            <img src="<%= data.items[i].media.m %>">
+          <% }; %>
+				</script>
+        <div class="boxImg">
+			</div>
+
+</body>
+</html>
